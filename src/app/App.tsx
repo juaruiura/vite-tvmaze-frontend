@@ -1,11 +1,12 @@
-import { BrowserRouter, Route } from 'react-router'
+import { Home } from '@ui/pages'
+import { BrowserRouter, Route, Routes } from 'react-router'
 
 function App() {
   return (
     <BrowserRouter>
-      <Route path="/">
-        <p>WIP</p>
-      </Route>
+      <Routes>
+        <Route path="/" element={<Home />} />
+      </Routes>
     </BrowserRouter>
   )
 }
